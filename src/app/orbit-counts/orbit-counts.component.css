@@ -12,7 +12,3 @@
 .counts span {
 	float: right;
 }
-
-td :nth-child(odd) {
-	background-color: purple;
-	}
