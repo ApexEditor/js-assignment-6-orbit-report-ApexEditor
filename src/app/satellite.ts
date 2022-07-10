@@ -23,6 +23,9 @@ export class Satellite {
    }
 
 }
+//call an array for ZebraStripes to change color in orb list CSS
+
+
 
 // TODO 3a: fix isSpaceDebris check
 // Fixed the isSpaceDebris check above
