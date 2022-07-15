@@ -1,15 +1,31 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<!-- <div>Total: <span>{{satellites.length}}</span></div>
+  <!-- <div>Total: <span>{{satellites.length}}</span></div>
 </div> -->
 
-<!-- TODO 4: add logic to count number of satellites displayed -->
+  <!-- TODO 4: add logic to count number of satellites displayed -->
 
-<div>Total: <span class="counts-total">{{satellites.length}}</span></div>
-<div>Communication: <span>{{countByType('Communication')}}</span></div>
-<div>Prob: <span>{{countByType('Prob')}}</span></div>
-<div>Space Station: <span>{{countByType('SpaceStation')}}</span></div>
-<div>Telescope: <span>{{countByType('Telescope')}}</span></div>
-<div>Space Debris: <span>{{countByType('SpaceDebris')}}</span></div>
-<div>Positioning: <span>{{countByType('Positioning')}}</span></div>
+  <!-- <div>Total: <span class="counts-total">{{satellites.length}}</span></div> -->
+  <div>
+    Total:
+    <span class="counts-total">{{ satellites ? satellites.length : 0 }}</span>
+  </div>
+  <div>
+    Communication: <span>{{ countByType("Communication") }}</span>
+  </div>
+  <div>
+    Prob: <span>{{ countByType("Prob") }}</span>
+  </div>
+  <div>
+    Space Station: <span>{{ countByType("SpaceStation") }}</span>
+  </div>
+  <div>
+    Telescope: <span>{{ countByType("Telescope") }}</span>
+  </div>
+  <div>
+    Space Debris: <span>{{ countByType("SpaceDebris") }}</span>
+  </div>
+  <div>
+    Positioning: <span>{{ countByType("Positioning") }}</span>
+  </div>
 </div>
